@@ -1,0 +1,17 @@
+<ul> 
+  <li *ngFor="let gasto of gastos"> 
+    <div class="card" style="width: 80rem;"> 
+       <img src="./images.jpeg" class="card-img-top" alt="personas">
+
+
+      <div class="card-body"> 
+        <h5 class="card-title">{{gasto}}</h5> 
+        <p class="card-text">Descripción gasto deducible!!</p>
+        <button (click)="mensaje()" class="btn btn-info">Información</button>
+        <button (click)="mensaje1(gasto)" class="btn btn-info">Detalle</button> 
+        <button (click)="borrarDeducible(gasto)" class="btn btn-warning">Borrar</button> 
+        <b>{{gasto}}</b>
+      </div> 
+    </div> 
+  </li> 
+</ul>
